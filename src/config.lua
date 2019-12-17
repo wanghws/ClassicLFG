@@ -1,5 +1,5 @@
 ClassicLFG.Config = {
-    Debug = false,
+    Debug = true,
     Version = "1.0.3",
     Font = "Fonts\\FRIZQT__.ttf",
     Network = {
@@ -111,7 +111,7 @@ if (GetLocale() == "koKR") then
 end
 
 if (GetLocale() == "zhCN") then
-    ClassicLFG.Config.Font  = "Fonts\\ARKai_T.ttf"
+    ClassicLFG.Config.Font  = "Fonts\\ARKai_T.TTF"
 end
 
 if (GetLocale() == "zhTW") then

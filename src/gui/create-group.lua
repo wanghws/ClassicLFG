@@ -85,6 +85,7 @@ ClassicLFG.QueueWindow.CreateGroup.Title = ClassicLFGEditBox(nil, ClassicLFG.Que
 ClassicLFG.QueueWindow.CreateGroup.Title.Frame:SetPoint("TOPLEFT", ClassicLFG.QueueWindow.CreateGroup.Icon.Texture, "BOTTOMLEFT", 0, -5);
 ClassicLFG.QueueWindow.CreateGroup.Title.Frame:SetPoint("BOTTOMRIGHT", ClassicLFG.QueueWindow.CreateGroup.Icon.Texture, "BOTTOMRIGHT", 0, -27)
 ClassicLFG.QueueWindow.CreateGroup.Title.Frame:SetMaxLetters(75)
+ClassicLFG.QueueWindow.CreateGroup.Title.Frame:SetText(ClassicLFG.Locale["Title"])
 ClassicLFG.QueueWindow.CreateGroup.Title:SetPlaceholder(ClassicLFG.Locale["Title"])
 ClassicLFG.QueueWindow.CreateGroup.Title.OnTextChanged = ClassicLFG.QueueWindow.CreateGroup.DataEntered
 
@@ -101,6 +102,7 @@ ClassicLFG.QueueWindow.CreateGroup.Description = ClassicLFGEditBox(nil, ClassicL
 ClassicLFG.QueueWindow.CreateGroup.Description.Frame:SetPoint("TOPLEFT", ClassicLFG.QueueWindow.CreateGroup.Dungeon.Frame, "BOTTOMLEFT", 0, -8)
 ClassicLFG.QueueWindow.CreateGroup.Description.Frame:SetPoint("BOTTOMRIGHT", ClassicLFG.QueueWindow.CreateGroup.Dungeon.Frame, "BOTTOMRIGHT", -0, -30)
 ClassicLFG.QueueWindow.CreateGroup.Description.Frame:SetMaxLetters(120)
+ClassicLFG.QueueWindow.CreateGroup.Description.Frame:SetText(ClassicLFG.Locale["Description"])
 ClassicLFG.QueueWindow.CreateGroup.Description:SetPlaceholder(ClassicLFG.Locale["Description"])
 ClassicLFG.QueueWindow.CreateGroup.Description.OnTextChanged = ClassicLFG.QueueWindow.CreateGroup.DataEntered
 
@@ -258,9 +260,9 @@ ClassicLFG.EventBus:RegisterCallback(ClassicLFG.Config.Events.DungeonGroupLeft, 
 	end
     ClassicLFG.QueueWindow.CreateGroup.QueueButton:SetText(ClassicLFG.Locale["List Group"])
     ClassicLFG.QueueWindow.CreateGroup.Title:Enable()
-    ClassicLFG.QueueWindow.CreateGroup.Title.Frame:SetText("")
+    --ClassicLFG.QueueWindow.CreateGroup.Title.Frame:SetText("")
     ClassicLFG.QueueWindow.CreateGroup.Description:Enable()
-    ClassicLFG.QueueWindow.CreateGroup.Description.Frame:SetText("")
+    --ClassicLFG.QueueWindow.CreateGroup.Description.Frame:SetText("")
     ClassicLFG.QueueWindow.CreateGroup.Dungeon:Enable()
 	ClassicLFG.QueueWindow.CreateGroup.Dungeon:Reset()
 	--ClassicLFG.QueueWindow.CreateGroup.AutoInvite.Frame:Show()
